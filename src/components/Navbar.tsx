@@ -88,12 +88,16 @@ const Navbar = () => {
     ></label>
     <ul
      tabIndex={0}
-     className="menu p-4 min-h-full absolute dropdown-content z-[1] w-96 bg-gray-100 text-black"
+     className="menu p-4 min-h-full absolute dropdown-content z-[1] w-96 bg-gray-100 text-black shadow-lg"
     >
      {NavegationLinks.map((link) => (
-      <li className="group py-3 px-3 border-b-2 border-x-gray-500 font-base hover:bg-gray-500 hover:cursor-pointer">
-       <a className="group-hover:text-white" href={link.link}>
+      <li className="group py-3 px-3 border-b-2 border-dashed border-b-gray-200 font-base hover:bg-red-500 hover:cursor-pointer">
+       <a
+        className="group-hover:text-white flex justify-between"
+        href={link.link}
+       >
         {link.name}
+        <FaArrowRight />
        </a>
       </li>
      ))}
