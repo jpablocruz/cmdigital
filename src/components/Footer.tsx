@@ -1,25 +1,47 @@
 import React from "react";
+import { MdPrivacyTip } from "react-icons/md";
+import { NavLink } from "react-router-dom";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
  return (
   <>
-   <footer className="footer px-10 py-7 bg-gray-100 text-black">
+   <footer className="footer px-10 py-7 bg-gray-100 text-black font-ibmplex">
     <nav>
-     <h6 className="footer-title font-bold text-gray-500">Navegación</h6>
-     <a className="link link-hover">Branding</a>
+     <h6 className="footer-title font-bold text-gray-500 pb-3">Navegación</h6>
+     <NavLink to="nosotros" className="hover:text-gray-500">
+      Nosotros
+     </NavLink>
      <a className="link link-hover">Design</a>
      <a className="link link-hover">Marketing</a>
      <a className="link link-hover">Advertisement</a>
     </nav>
     <nav>
-     <h6 className="footer-title font-bold text-gray-500">Contactos</h6>
-     <a className="link link-hover">Telefono</a>
-     <a className="link link-hover">Whatsapp</a>
-     <a className="link link-hover">Correo</a>
-     <a className="link link-hover">Ubicacion</a>
+     <h6 className="footer-title font-bold text-gray-500 pb-3">Contactos</h6>
+     <a className="group flex gap-4 items-center" href="#mandar-a-whasap">
+      <IoLogoWhatsapp className="group-hover:text-gray-500" />
+      <span className="group-hover:underline">{"+51 81 8181 8181"}</span>
+     </a>
+     <a className="group flex gap-4 items-center" href="#mandar-a-whasap">
+      <FaPhoneAlt className="group-hover:text-gray-500" />
+      <span className="group-hover:underline">{"+51 81 8181 8181"}</span>
+     </a>
+     <a className="group flex gap-4 items-center" href="#mandar-a-whasap">
+      <FaEnvelope className="group-hover:text-gray-500" />
+      <span className="group-hover:underline">{"cmcopiadoras@gmail.com"}</span>
+     </a>
+     <a className="group flex gap-4 items-center" href="#mandar-a-whasap">
+      <FaLocationDot className="group-hover:text-gray-500" />
+      <span className="group-hover:underline">
+       {"Reforma #91879 Zona Centro"}
+      </span>
+     </a>
     </nav>
     <nav>
-     <h6 className="footer-title font-bold text-gray-500">
+     <h6 className="footer-title font-bold text-gray-500 pb-3">
       Cotiza o Contáctanos
      </h6>
      <a className="link link-hover">
@@ -27,16 +49,17 @@ const Footer = () => {
      </a>
     </nav>
    </footer>
-   <footer className="footer px-10 py-4 border-t bg-gray-100 text-black border-gray-300">
+   <footer className="footer px-10 py-4 border-t bg-gray-100 text-black font-ibmplex border-gray-300">
     <aside className="items-center grid-flow-col">
-     <p>CM Digital 2024</p>
+     <p>© CM Digital 2024</p>
     </aside>
-    <aside className="items-center grid-flow-col">
+    <aside className="items-center grid-flow-col flex gap-3">
+     <MdPrivacyTip className="text-blue-600" />
      <p>Aviso de privacidad</p>
     </aside>
     <aside className="items-center grid-flow-col">
      <p>
-      Desarrollado por <u>JPCR</u>
+      Desarrollado por <u>Pablo Cruz.</u>
      </p>
     </aside>
     <nav className="md:place-self-center md:justify-self-end">
