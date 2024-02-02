@@ -10,7 +10,7 @@ const Navbar = () => {
   { name: "Nosotros", link: "/nosotros" },
  ];
  return (
-  <div className="drawer bg-white py-2 px-5">
+  <div className="drawer bg-white py-2 px-10">
    <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
    <div className="drawer-content">
     <div className="navbar bg-white">
@@ -38,7 +38,7 @@ const Navbar = () => {
      <div className="navbar-start flex justify-center lg:justify-start">
       <NavLink
        to="/"
-       className="btn text-lg text-black font-bold hover:cursor-pointer"
+       className="btn p-0 text-lg text-black font-bold hover:cursor-pointer"
       >
        CM Digital
       </NavLink>
@@ -60,7 +60,7 @@ const Navbar = () => {
      <div className="navbar-end">
       <NavLink
        to={"/soporte"}
-       className="btn bg-black text-white h-9 min-h-0 px-3"
+       className="btn bg-black text-white h-8 min-h-0 px-3"
       >
        Soporte
       </NavLink>
