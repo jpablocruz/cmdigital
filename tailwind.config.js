@@ -2,7 +2,12 @@
 module.exports = {
  content: ["./src/**/*.{js,jsx,ts,tsx}"],
  theme: {
-  extend: {},
+  extend: {
+   backgroundImage: {},
+   fontFamily: {
+    ibmplex: ["IBM Plex Sans", "sans-serif"],
+   },
+  },
  },
  plugins: [require("daisyui")],
  daisyui: {

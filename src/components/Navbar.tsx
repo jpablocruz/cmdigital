@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navlink } from "../interfaces/links";
 import { NavLink } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
 const Navbar = () => {
+ const [hovered, setHovered] = useState(false);
+ const toggleHover = () => {
+  setHovered(!hovered);
+ };
  const NavegationLinks: Navlink[] = [
   { name: "Renta de multifuncionales", link: "/renta-multifuncionales" },
   { name: "Gestión documental", link: "/gestion-documental" },
@@ -10,10 +16,10 @@ const Navbar = () => {
   { name: "Nosotros", link: "/nosotros" },
  ];
  return (
-  <div className="drawer bg-white py-2 px-10">
+  <div className="drawer py-2 px-10 inset-0 w-full bg-gray-50 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:163px_63px]">
    <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
    <div className="drawer-content">
-    <div className="navbar bg-white">
+    <div className="navbar bg-transparent">
      <div className="navbar-start lg:hidden text-black">
       <label
        htmlFor="my-drawer-3"
@@ -43,12 +49,14 @@ const Navbar = () => {
        CM Digital
       </NavLink>
      </div>
-     <div className="navbar-center hidden lg:flex text-black">
-      <ul className="menu menu-horizontal px-1 gap-5">
+     <div className="navbar-center font-ibmplex hidden lg:flex">
+      <ul className="menu flex menu-horizontal px-1 gap-[40px]">
        {NavegationLinks.map((link) => (
-        <li className="border-2 border-white hover:border-b-black">
+        <li className="hover:text-gray-500 text-black text-base font-semibold">
          <NavLink
-          className={({ isActive }) => (isActive ? "text-red-600" : "inactive")}
+          className={({ isActive }) =>
+           isActive ? "text-gray-500" : "inactive"
+          }
           to={link.link}
          >
           {link.name}
@@ -57,12 +65,17 @@ const Navbar = () => {
        ))}
       </ul>
      </div>
-     <div className="navbar-end">
+     <div className="navbar-end font-ibmplex">
       <NavLink
        to={"/soporte"}
-       className="btn bg-black text-white h-8 min-h-0 px-3"
+       className="btn bg-red-500 text-white h-8 min-h-0 px-3 hover:bg-black ease-in-out duration-200"
+       onMouseEnter={() => toggleHover()}
+       onMouseLeave={() => toggleHover()}
       >
-       Soporte
+       <div className="flex gap-3">
+        <span>Soporte</span>
+        {hovered ? <FaArrowRight /> : <FaChevronRight />}
+       </div>
       </NavLink>
      </div>
     </div>
@@ -78,7 +91,7 @@ const Navbar = () => {
      className="menu p-4 min-h-full absolute dropdown-content z-[1] w-96 bg-gray-100 text-black"
     >
      {NavegationLinks.map((link) => (
-      <li className="group py-3 px-3 border-b-2 border-x-gray-500 font-semibold hover:bg-gray-500 hover:cursor-pointer">
+      <li className="group py-3 px-3 border-b-2 border-x-gray-500 font-base hover:bg-gray-500 hover:cursor-pointer">
        <a className="group-hover:text-white" href={link.link}>
         {link.name}
        </a>
