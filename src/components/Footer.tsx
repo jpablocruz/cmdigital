@@ -1,44 +1,37 @@
 import React from "react";
 import { MdPrivacyTip } from "react-icons/md";
 import { NavLink } from "react-router-dom";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
+import { ContactLinks } from "../constants/arrays";
+import { NavegationLinks } from "../constants/arrays";
 
 const Footer = () => {
  return (
   <>
-   <footer className="footer px-10 py-7 bg-gray-100 text-black font-ibmplex">
+   <footer className="footer px-24 py-7 bg-gray-100 text-black font-ibmplex">
     <nav>
      <h6 className="footer-title font-bold text-gray-500 pb-3">Navegación</h6>
-     <NavLink to="nosotros" className="hover:text-gray-500">
-      Nosotros
-     </NavLink>
-     <a className="link link-hover">Design</a>
-     <a className="link link-hover">Marketing</a>
-     <a className="link link-hover">Advertisement</a>
+     {NavegationLinks.map((link) => (
+      <NavLink
+       key={link.name}
+       to={link.link}
+       className="hover:text-gray-500 py-1"
+      >
+       {link.name}
+      </NavLink>
+     ))}
     </nav>
     <nav>
      <h6 className="footer-title font-bold text-gray-500 pb-3">Contactos</h6>
-     <a className="group flex gap-4 items-center" href="#mandar-a-whasap">
-      <IoLogoWhatsapp className="group-hover:text-gray-500" />
-      <span className="group-hover:underline">{"+51 81 8181 8181"}</span>
-     </a>
-     <a className="group flex gap-4 items-center" href="#mandar-a-whasap">
-      <FaPhoneAlt className="group-hover:text-gray-500" />
-      <span className="group-hover:underline">{"+51 81 8181 8181"}</span>
-     </a>
-     <a className="group flex gap-4 items-center" href="#mandar-a-whasap">
-      <FaEnvelope className="group-hover:text-gray-500" />
-      <span className="group-hover:underline">{"cmcopiadoras@gmail.com"}</span>
-     </a>
-     <a className="group flex gap-4 items-center" href="#mandar-a-whasap">
-      <FaLocationDot className="group-hover:text-gray-500" />
-      <span className="group-hover:underline">
-       {"Reforma #91879 Zona Centro"}
-      </span>
-     </a>
+     {ContactLinks.map((link) => (
+      <a
+       key={link.name}
+       className="group flex gap-4 items-center py-1"
+       href={link.link}
+      >
+       <link.icon className="group-hover:text-gray-500" />
+       <span className="group-hover:text-gray-500">{link.info}</span>
+      </a>
+     ))}
     </nav>
     <nav>
      <h6 className="footer-title font-bold text-gray-500 pb-3">
@@ -49,7 +42,7 @@ const Footer = () => {
      </a>
     </nav>
    </footer>
-   <footer className="footer px-10 py-4 border-t bg-gray-100 text-black font-ibmplex border-gray-300">
+   <footer className="footer px-24 py-4 border-t bg-gray-100 text-black font-ibmplex border-gray-300">
     <aside className="items-center grid-flow-col">
      <p>© CM Digital 2024</p>
     </aside>

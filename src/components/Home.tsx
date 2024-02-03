@@ -1,10 +1,11 @@
 import React from "react";
 import printer from "../images/printerAngle.png";
 import Clientes from "./Clientes";
+import Services from "./Services";
 
 const Home = () => {
  return (
-  <div className="h-auto font-ibmplex bg-gray-50 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:163px_63px]">
+  <div className="h-auto font-ibmplex bg-gray-50 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px)] bg-[size:163px]">
    <div className="flex flex-col lg:flex-row pt-16 pb-6 px-24">
     <div className="w-3/5 pt-16 pb-5">
      <div className="hero-content">
@@ -28,6 +29,7 @@ const Home = () => {
     </div>
    </div>
    <Clientes />
+   <Services />
   </div>
  );
 };

@@ -1,20 +1,14 @@
 import React, { useState } from "react";
-import { Navlink } from "../interfaces/links";
 import { NavLink } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
+import { NavegationLinks } from "../constants/arrays";
 
 const Navbar = () => {
  const [hovered, setHovered] = useState(false);
  const toggleHover = () => {
   setHovered(!hovered);
  };
- const NavegationLinks: Navlink[] = [
-  { name: "Renta de multifuncionales", link: "/renta-multifuncionales" },
-  { name: "Gestión documental", link: "/gestion-documental" },
-  { name: "Clientes", link: "/clientes" },
-  { name: "Nosotros", link: "/nosotros" },
- ];
  return (
   <div className="drawer py-2 px-24 inset-0 w-full bg-gray-50 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:163px_63px]">
    <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
