@@ -17,7 +17,7 @@ const Navbar = () => {
     <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
     <div className="drawer-content">
      <div className="navbar bg-transparent px-4">
-      <div className="navbar-start lg:hidden text-black">
+      <div className="navbar-start md:hidden text-black">
        <label
         htmlFor="my-drawer-3"
         aria-label="open sidebar"
@@ -38,7 +38,7 @@ const Navbar = () => {
         </svg>
        </label>
       </div>
-      <div className="navbar-start justify-center lg:justify-start">
+      <div className="navbar-end md:navbar-start md:justify-start">
        <NavLink
         to="/"
         className="btn p-0 text-lg text-black font-bold hover:cursor-pointer"
@@ -46,7 +46,7 @@ const Navbar = () => {
         CM Digital
        </NavLink>
       </div>
-      <div className="navbar-center font-ibmplex hidden lg:flex">
+      <div className="navbar-center font-ibmplex hidden md:flex">
        <ul className="menu flex menu-horizontal px-1 gap-[40px]">
         {NavegationLinks.map((link) => (
          <li
@@ -65,7 +65,7 @@ const Navbar = () => {
         ))}
        </ul>
       </div>
-      <div className="navbar-end font-ibmplex">
+      <div className="navbar-end hidden md:flex font-ibmplex">
        <NavLink
         to={"/soporte"}
         className="btn bg-red-500 text-white h-8 min-h-0 px-3 hover:bg-black ease-in-out duration-200"
