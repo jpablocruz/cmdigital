@@ -7,7 +7,7 @@ import SectionGuidelines from "./SectionGuidelines";
 const Home = () => {
  return (
   <>
-   <div className="flex relative md:h-[90vh] lg:h-[80vh] z-10 text-black font-mavenPro justify-center border-t-gray-200 border-t-[1px] px-32">
+   <div className="flex relative md:h-[90vh] lg:h-[90vh] z-10 text-black font-mavenPro justify-center border-t-gray-200 border-t-[1px] lg:px-32 px-4">
     <SectionGuidelines />
     <div className="relative flex flex-col md:flex-row px-4">
      <div className="w-3/5 mt-16 pb-5">
@@ -29,8 +29,8 @@ const Home = () => {
        </div>
       </div>
      </div>
-     <div className="lg:w-2/5 hero text-black items-start overflow-hidden block">
-      <img src={printer} className="w-[40vw] h-screen overflow-hidden"></img>
+     <div className="lg:w-2/5 hero text-black bg-red-800">
+      {/* <img src={printer} className="w-[30vw] h-[100%] overflow-hidden"></img> */}
      </div>
     </div>
    </div>
