@@ -7,9 +7,9 @@ import SectionGuidelines from "./SectionGuidelines";
 const Home = () => {
  return (
   <>
-   <div className="flex relative h-[60vh] z-10 text-black font-mavenPro justify-center border-t-gray-200 border-t-[1px] px-32">
+   <div className="flex relative md:h-[90vh] lg:h-[80vh] z-10 text-black font-mavenPro justify-center border-t-gray-200 border-t-[1px] px-32">
     <SectionGuidelines />
-    <div className="relative flex flex-col lg:flex-row px-4">
+    <div className="relative flex flex-col md:flex-row px-4">
      <div className="w-3/5 mt-16 pb-5">
       <div className="hero-content pt-8">
        <div className="text-black">
@@ -29,12 +29,11 @@ const Home = () => {
        </div>
       </div>
      </div>
-     <div className="w-2/5 hero text-black items-start">
-      <img src={printer} className="lg:h-fit"></img>
+     <div className="lg:w-2/5 hero text-black items-start overflow-hidden block">
+      <img src={printer} className="w-[40vw] h-screen overflow-hidden"></img>
      </div>
     </div>
    </div>
-   <Clientes />
   </>
  );
 };
