@@ -1,5 +1,5 @@
 import React from "react";
-import printer from "../images/diseñoCopiadoras.png";
+import printer from "../images/printerAngle.png";
 import Clientes from "./Clientes";
 import Services from "./Services";
 import SectionGuidelines from "./SectionGuidelines";
@@ -7,7 +7,7 @@ import SectionGuidelines from "./SectionGuidelines";
 const Home = () => {
  return (
   <>
-   <div className="flex relative h-[120vh] md:h-[90vh] lg:h-[75vh] z-10 text-black font-mavenPro justify-center border-t-gray-200 border-t-[1px] lg:pl-32 md:pl-4 overflow-hidden">
+   <div className="flex relative h-[120vh] md:h-[80vh] lg:h-[75vh] z-10 text-black font-mavenPro justify-center border-t-gray-200 border-t-[1px] lg:pl-32 md:pl-4 overflow-hidden">
     <SectionGuidelines />
     <div className="relative flex flex-col md:flex-row md:pl-4">
      <div className="md:w-3/5 md:mt-8 lg:mt-16 pb-5">
@@ -33,8 +33,8 @@ const Home = () => {
        </div>
       </div>
      </div>
-     <div className="w-1/2 lg:w-2/5 hero text-black">
-      <img src={printer} className="h-[100vh]"></img>
+     <div className="flex w-2/5 lg:w-2/5 hero text-black flex-shrink-0 bg-red-300">
+      {/* <img src={printer} className="h-[100vh]"></img> */}
      </div>
     </div>
    </div>
