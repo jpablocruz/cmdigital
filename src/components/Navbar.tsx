@@ -13,7 +13,7 @@ const Navbar = () => {
  return (
   <>
    <HeaderGuidelines />
-   <div className="drawer relative box-border inset-0 h-auto mx-4 bg-transparent">
+   <div className="drawer relative box-border inset-0 h-auto mx-4 lg:mx-32 bg-transparent">
     <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
     <div className="drawer-content px-4">
      <div className="navbar bg-transparent pt-2">
@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="navbar-end md:navbar-start md:justify-start">
        <NavLink
         to="/"
-        className="btn p-0 text-lg text-black font-bold hover:cursor-pointer"
+        className="btn p-0 text-lg text-black font-ibmplex font-bold hover:cursor-pointer"
        >
         CM Digital
        </NavLink>

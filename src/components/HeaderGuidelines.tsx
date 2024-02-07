@@ -8,7 +8,7 @@ const HeaderGuidelines = () => {
   >
    <div
     id="Header_guidelines"
-    className="absolute top-0 left-0 w-[100%] h-[100%] px-4"
+    className="absolute top-0 left-0 w-[100%] h-[100%] px-4 lg:px-32"
    >
     <div
      id="Guides_container"
