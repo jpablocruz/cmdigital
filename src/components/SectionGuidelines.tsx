@@ -4,11 +4,11 @@ const SectionGuidelines = () => {
  return (
   <div
    id="Section_container"
-   className="w-[100%] h-[50vh] left-0 overflow-hidden box-border bg-gray-50"
+   className="absolute w-[100%] h-[90vh] left-0 overflow-hidden box-border bg-gray-50"
   >
    <div
     id="Section_guidelines"
-    className="left-0 w-[100%] h-[100%] px-4 lg:px-32"
+    className="left-0 w-[100%] h-[100%] px-4 lg:px-32 overflow-hidden"
    >
     <div
      id="Section_container"

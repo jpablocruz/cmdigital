@@ -10,11 +10,13 @@ interface MainLayoutProps {
 
 const MainLayout: FC<MainLayoutProps> = ({ children }) => {
  return (
-  <div>
-   <Navbar />
-   {children || <Outlet />}
-   <Footer />
-  </div>
+  <>
+   <div>
+    <Navbar />
+    {children || <Outlet />}
+    <Footer />
+   </div>
+  </>
  );
 };
 
