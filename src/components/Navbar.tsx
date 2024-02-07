@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="navbar-end md:navbar-start md:justify-start">
        <NavLink
         to="/"
-        className="btn p-0 text-lg text-black font-ibmplex font-bold hover:cursor-pointer"
+        className="btn p-0 text-lg text-black font-ibmplex font-extrabold hover:cursor-pointer"
        >
         CM Digital
        </NavLink>

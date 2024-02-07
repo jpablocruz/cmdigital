@@ -6,6 +6,8 @@ module.exports = {
    backgroundImage: {},
    fontFamily: {
     ibmplex: ["IBM Plex Sans", "sans-serif"],
+    ibmplexBold: ["IBM Plex Sans", "sans-serif"],
+    mavenPro: ["Maven Pro", "sans-serif"],
    },
   },
  },

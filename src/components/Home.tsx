@@ -6,57 +6,36 @@ import SectionGuidelines from "./SectionGuidelines";
 
 const Home = () => {
  return (
-  <div className="flex relative h-[90vh] z-10 text-black justify-center border-t-gray-200 border-t-2">
-   <SectionGuidelines />
-   <div className="relative flex flex-col lg:flex-row pt-16 pb-6 px-24">
-    <div className="w-3/5 pt-16 pb-5">
-     <div className="hero-content">
-      <div className="text-black">
-       <h1 className="text-6xl font-bold pb-3">Acelera tu oficina</h1>
-       <h1 className="text-6xl font-bold pb-1">Eleva tu productividad</h1>
-       <p className="py-6 text-2xl mr-32">
-        Descubre un nuevo nivel de eficiencia con nuestras soluciones de
-        impresión y copiadoras - Desde impresoras multifunción hasta copiadoras
-        de alta calidad.
-       </p>
-       <button className="btn bg-red-500 font-bold text-white">
-        Conocer Servicios
-       </button>
-       <button className="btn font-bold text-red">Contáctanos</button>
+  <>
+   <div className="flex relative h-[60vh] z-10 text-black font-mavenPro justify-center border-t-gray-200 border-t-[1px] px-32">
+    <SectionGuidelines />
+    <div className="relative flex flex-col lg:flex-row px-4">
+     <div className="w-3/5 mt-16 pb-5">
+      <div className="hero-content pt-8">
+       <div className="text-black">
+        <h1 className="text-6xl font-bold pb-3">Acelera tu oficina</h1>
+        <h1 className="text-6xl font-bold pb-1">Eleva tu productividad</h1>
+        <p className="py-6 text-2xl font-medium mr-32">
+         Descubre un nuevo nivel de eficiencia con nuestras soluciones de
+         impresión y copiadoras - Desde impresoras multifunción hasta copiadoras
+         de alta calidad.
+        </p>
+        <button className="btn bg-red-500 font-bold font-ibmplex text-base text-white">
+         Conocer Servicios
+        </button>
+        <button className="btn font-bold text-red-500 font-ibmplex text-base">
+         Contáctanos
+        </button>
+       </div>
       </div>
      </div>
-    </div>
-    <div className="w-2/5 hero text-black items-start">
-     <img src={printer} className="h-5/6"></img>
+     <div className="w-2/5 hero text-black items-start">
+      <img src={printer} className="lg:h-fit"></img>
+     </div>
     </div>
    </div>
-  </div>
-  //   <div className="h-auto font-ibmplex bg-gray-50">
-  //    <div className="flex flex-col lg:flex-row pt-16 pb-6 px-24">
-  //     <div className="w-3/5 pt-16 pb-5">
-  //      <div className="hero-content">
-  //       <div className="text-black">
-  //        <h1 className="text-6xl font-bold pb-3">Acelera tu oficina</h1>
-  //        <h1 className="text-6xl font-bold pb-1">Eleva tu productividad</h1>
-  //        <p className="py-6 text-2xl mr-32">
-  //         Descubre un nuevo nivel de eficiencia con nuestras soluciones de
-  //         impresión y copiadoras - Desde impresoras multifunción hasta copiadoras
-  //         de alta calidad.
-  //        </p>
-  //        <button className="btn bg-red-500 font-bold text-white">
-  //         Conocer Servicios
-  //        </button>
-  //        <button className="btn font-bold text-red">Contáctanos</button>
-  //       </div>
-  //      </div>
-  //     </div>
-  //     <div className="w-2/5 hero text-black items-start">
-  //      <img src={printer} className="h-5/6"></img>
-  //     </div>
-  //    </div>
-  //    <Clientes />
-  //    <Services />
-  //   </div>
+   <Clientes />
+  </>
  );
 };
 
