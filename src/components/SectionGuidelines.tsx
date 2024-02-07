@@ -1,18 +1,18 @@
 import React from "react";
 
-const HeaderGuidelines = () => {
+const SectionGuidelines = () => {
  return (
   <div
-   id="Header_gontainer"
-   className="w-[100%] h-16 absolute top-0 left-0 overflow-hidden box-border bg-gray-50"
+   id="Section_container"
+   className="w-[100%] h-[50vh] left-0 overflow-hidden box-border bg-gray-50"
   >
    <div
-    id="Header_guidelines"
-    className="absolute top-0 left-0 w-[100%] h-[100%] px-4 lg:px-32"
+    id="Section_guidelines"
+    className="left-0 w-[100%] h-[100%] px-4 lg:px-32"
    >
     <div
-     id="Guides_container"
-     className="relative grid h-[100%] mx-auto max-w-[calc(10vw - 0px)] grid-cols-6"
+     id="Section_container"
+     className="relative grid h-screen mx-auto max-w-[calc(10vw - 0px)] grid-cols-6"
     >
      <div className="border-gray-200 border-solid lg:border-l-[1.5px] border-l-[1.5px]"></div>
      <div className="border-gray-200 border-none lg:border-dashed lg:border-x-[1.5px]"></div>
@@ -26,4 +26,4 @@ const HeaderGuidelines = () => {
  );
 };
 
-export default HeaderGuidelines;
+export default SectionGuidelines;
