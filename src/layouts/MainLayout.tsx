@@ -12,8 +12,8 @@ const MainLayout: FC<MainLayoutProps> = ({ children }) => {
  return (
   <div>
    <Navbar />
-   {/* {children || <Outlet />} */}
-   {/* <Footer /> */}
+   {children || <Outlet />}
+   <Footer />
   </div>
  );
 };

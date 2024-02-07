@@ -4,7 +4,7 @@ const HeaderGuidelines = () => {
  return (
   <div
    id="Header_gontainer"
-   className="w-[100%] h-[100%] absolute top-0 left-0 overflow-hidden box-border bg-white"
+   className="w-[100%] h-16 absolute top-0 left-0 overflow-hidden box-border bg-white"
   >
    <div
     id="Header_guidelines"
