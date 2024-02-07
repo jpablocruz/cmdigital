@@ -16,7 +16,7 @@ const Navbar = () => {
    <div className="drawer relative h-16 box-border inset-0 mx-4 lg:mx-32 bg-transparent z-30">
     <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
     <div className="drawer-content px-4">
-     <div className="navbar bg-transparent pt-2">
+     <div className="navbar bg-transparent pt-4">
       <div className="navbar-start md:hidden text-black">
        <label
         htmlFor="my-drawer-3"

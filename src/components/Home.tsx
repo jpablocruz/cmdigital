@@ -6,7 +6,7 @@ import SectionGuidelines from "./SectionGuidelines";
 
 const Home = () => {
  return (
-  <div className="flex relative h-[90vh] z-10 text-black justify-center">
+  <div className="flex relative h-[90vh] z-10 text-black justify-center border-t-gray-200 border-t-2">
    <SectionGuidelines />
    <div className="relative h-40 p-24"></div>
   </div>
