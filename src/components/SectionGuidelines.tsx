@@ -4,7 +4,7 @@ const SectionGuidelines = () => {
  return (
   <div
    id="Section_container"
-   className="absolute w-[100%] md:h-[90vh] lg:h-[90vh] left-0 overflow-hidden box-border bg-gray-50"
+   className="absolute w-[100%] h-[120vh] md:h-[90vh] lg:h-[85vh] left-0 overflow-hidden box-border bg-gray-50"
   >
    <div
     id="Section_guidelines"
@@ -12,7 +12,7 @@ const SectionGuidelines = () => {
    >
     <div
      id="Section_container"
-     className="relative grid md:h-[90vh] lg:h-[90vh] mx-auto max-w-[calc(10vw - 0px)] grid-cols-6"
+     className="relative grid h-[120vh] md:h-[91vh] lg:h-[85vh] mx-auto max-w-[calc(10vw - 0px)] grid-cols-6"
     >
      <div className="border-gray-200 border-solid lg:border-l-[1.5px] border-l-[1.5px]"></div>
      <div className="border-gray-200 border-none lg:border-dashed lg:border-x-[1.5px]"></div>

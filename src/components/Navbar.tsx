@@ -80,7 +80,7 @@ const Navbar = () => {
       </div>
      </div>
     </div>
-    <div className="drawer-side">
+    <div className="drawer-side font-ibmplex">
      <label
       htmlFor="my-drawer-3"
       aria-label="close sidebar"

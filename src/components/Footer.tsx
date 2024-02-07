@@ -7,7 +7,7 @@ import { NavegationLinks } from "../constants/arrays";
 const Footer = () => {
  return (
   <>
-   <footer className="footer bottom-14 px-32 py-7 bg-gray-100 text-black font-ibmplex">
+   <footer className="footer bottom-14 md:px-32 py-7 bg-gray-100 text-black font-ibmplex">
     <nav>
      <h6 className="footer-title font-bold text-gray-500 pb-3">Navegación</h6>
      {NavegationLinks.map((link) => (
