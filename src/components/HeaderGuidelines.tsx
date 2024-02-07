@@ -4,15 +4,15 @@ const HeaderGuidelines = () => {
  return (
   <div
    id="Header_gontainer"
-   className="w-[100%] h-[100%] absolute top-0 left-0 overflow-hidden box-border bg-gray-50 z-0"
+   className="w-[100%] h-16 absolute top-0 left-0 overflow-hidden box-border bg-gray-50 z-0"
   >
    <div
     id="Header_guidelines"
-    className="absolute top-0 left-0 w-[100%] h-[100%] px-4 lg:px-32"
+    className="absolute top-0 left-0 w-[100%] h-16 px-4 lg:px-32"
    >
     <div
      id="Guides_container"
-     className="relative grid h-[100%] mx-auto max-w-[calc(10vw - 0px)] grid-cols-6"
+     className="relative grid h-16 mx-auto max-w-[calc(10vw - 0px)] grid-cols-6"
     >
      <div className="border-gray-200 border-solid lg:border-l-[1.5px] border-l-[1.5px]"></div>
      <div className="border-gray-200 border-none lg:border-dashed lg:border-x-[1.5px]"></div>

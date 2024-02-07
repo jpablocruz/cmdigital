@@ -6,8 +6,10 @@ import SectionGuidelines from "./SectionGuidelines";
 
 const Home = () => {
  return (
-  <div className="relative lg:h-[90vh] z-10 text-black">hola hola hola</div>
-  //   <SectionGuidelines />
+  <div className="flex relative h-[90vh] z-10 text-black justify-center">
+   <SectionGuidelines />
+   <div className="relative h-40 p-24"></div>
+  </div>
   //   <div className="h-auto font-ibmplex bg-gray-50">
   //    <div className="flex flex-col lg:flex-row pt-16 pb-6 px-24">
   //     <div className="w-3/5 pt-16 pb-5">

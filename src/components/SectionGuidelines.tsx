@@ -12,7 +12,7 @@ const SectionGuidelines = () => {
    >
     <div
      id="Section_container"
-     className="relative grid h-screen mx-auto max-w-[calc(10vw - 0px)] grid-cols-6"
+     className="relative grid h-[100%] mx-auto max-w-[calc(10vw - 0px)] grid-cols-6"
     >
      <div className="border-gray-200 border-solid lg:border-l-[1.5px] border-l-[1.5px]"></div>
      <div className="border-gray-200 border-none lg:border-dashed lg:border-x-[1.5px]"></div>
