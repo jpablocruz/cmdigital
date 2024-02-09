@@ -3,6 +3,8 @@ import { Client, ContactLink, Navlink } from "../interfaces/links";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import telcelLogo from "../images/telcel.png";
+import casasLogo from "../images/casasgeo.png";
+import uanlLogo from "../images/UANL-Logo.png";
 
 export const NavegationLinks: Navlink[] = [
  { name: "Renta de multifuncionales", link: "/renta-multifuncionales" },
@@ -17,15 +19,15 @@ export const Clients: Client[] = [
  },
  {
   name: "CFE",
-  logo: telcelLogo,
+  logo: uanlLogo,
  },
  {
   name: "casas geo",
-  logo: telcelLogo,
+  logo: casasLogo,
  },
  {
   name: "Gobierno de NL",
-  logo: telcelLogo,
+  logo: casasLogo,
  },
  {
   name: "UANL",
@@ -33,7 +35,7 @@ export const Clients: Client[] = [
  },
  {
   name: "CLiente 2",
-  logo: telcelLogo,
+  logo: uanlLogo,
  },
  {
   name: "Cliente 3",
@@ -41,7 +43,7 @@ export const Clients: Client[] = [
  },
  {
   name: "Cliente 4",
-  logo: telcelLogo,
+  logo: casasLogo,
  },
 ];
 

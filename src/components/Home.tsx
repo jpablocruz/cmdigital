@@ -4,6 +4,7 @@ import Clientes from "./Clientes";
 import Services from "./Services";
 import SectionGuidelines from "./SectionGuidelines";
 import NavButton from "./common/NavButton";
+import Brands from "./Brands";
 
 const Home = () => {
  return (
@@ -45,6 +46,7 @@ const Home = () => {
    </div>
    <Clientes />
    <Services />
+   <Brands />
   </>
  );
 };
