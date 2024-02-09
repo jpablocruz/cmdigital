@@ -7,16 +7,21 @@ import SectionGuidelines from "./SectionGuidelines";
 const Home = () => {
  return (
   <>
-   <div className="flex relative h-[120vh] md:h-[80vh] lg:h-[75vh] z-10 text-black font-mavenPro justify-center border-t-gray-200 border-t-[1px] lg:pl-32 md:pl-4 overflow-hidden">
-    <SectionGuidelines />
-    <div className="relative flex flex-col md:flex-row md:pl-4">
+   <div className="flex relative h-[120vh] md:h-[80vh] lg:h-[75vh] z-10 text-black font-mavenPro justify-center border-t-gray-200 border-t-[1px] lg:px-32 md:px-4 overflow-hidden">
+    <SectionGuidelines
+     height={120}
+     heightM={80}
+     heightL={75}
+     color="bg-gray-50"
+    />
+    <div className="relative flex flex-col md:flex-row px-4">
      <div className="md:w-3/5 md:mt-8 lg:mt-16 pb-5">
       <div className="hero-content pt-8">
        <div className="text-black text-center md:text-start">
-        <h1 className="text-5xl md:text-6xl font-bold pb-3">
+        <h1 className="text-4xl md:text-5xl font-bold pb-3">
          Acelera tu oficina
         </h1>
-        <h1 className="text-5xl md:text-6xl font-bold pb-1">
+        <h1 className="text-4xl md:text-5xl font-bold pb-1">
          Eleva tu productividad
         </h1>
         <p className="py-6 text-xl font-medium md:mr-32">
@@ -33,11 +38,13 @@ const Home = () => {
        </div>
       </div>
      </div>
-     <div className="flex w-2/5 lg:w-2/5 hero text-black flex-shrink-0 bg-red-300">
-      {/* <img src={printer} className="h-[100vh]"></img> */}
-     </div>
+     <img
+      className="flex w-[500px] h-[500px] lg:w-[500px] lg:h-[500px] hero text-black"
+      src={printer}
+     ></img>
     </div>
    </div>
+   <Clientes />
   </>
  );
 };

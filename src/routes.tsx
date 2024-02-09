@@ -11,7 +11,6 @@ const Loadable = (Component: any) => (props: JSX.IntrinsicAttributes) => (
 
 const Home = Loadable(lazy(() => import("./components/Home")));
 const Nosotros = Loadable(lazy(() => import("./components/Nosotros")));
-const Clientes = Loadable(lazy(() => import("./components/Clientes")));
 const GestDoc = Loadable(lazy(() => import("./components/GestDoc")));
 const RentMulti = Loadable(lazy(() => import("./components/RentMulti")));
 
@@ -28,11 +27,6 @@ const routes: RouteObject[] = [
     index: true,
     path: "nosotros",
     element: <Nosotros />,
-   },
-   {
-    index: true,
-    path: "clientes",
-    element: <Clientes />,
    },
    {
     index: true,

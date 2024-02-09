@@ -6,7 +6,6 @@ import { IoLogoWhatsapp } from "react-icons/io";
 export const NavegationLinks: Navlink[] = [
  { name: "Renta de multifuncionales", link: "/renta-multifuncionales" },
  { name: "Gestión documental", link: "/gestion-documental" },
- { name: "Clientes", link: "/clientes" },
  { name: "Nosotros", link: "/nosotros" },
 ];
 
@@ -32,15 +31,15 @@ export const Clients: Client[] = [
   logo: "",
  },
  {
-  name: "Cliente",
-  logo: "",
- },
- {
   name: "CLiente 2",
   logo: "",
  },
  {
   name: "Cliente 3",
+  logo: "",
+ },
+ {
+  name: "Cliente 4",
   logo: "",
  },
 ];
