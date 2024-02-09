@@ -3,6 +3,7 @@ import printer from "../images/printerAngle.png";
 import Clientes from "./Clientes";
 import Services from "./Services";
 import SectionGuidelines from "./SectionGuidelines";
+import NavButton from "./common/NavButton";
 
 const Home = () => {
  return (
@@ -29,9 +30,7 @@ const Home = () => {
          impresión y copiadoras - Desde impresoras multifunción hasta copiadoras
          de alta calidad.
         </p>
-        <button className="btn bg-red-500 font-bold font-ibmplex text-base text-white">
-         Conocer Servicios
-        </button>
+        <NavButton link="#servicios" />
         <button className="btn font-bold text-red-500 font-ibmplex text-base">
          Contáctanos
         </button>
@@ -45,6 +44,7 @@ const Home = () => {
     </div>
    </div>
    <Clientes />
+   <Services />
   </>
  );
 };

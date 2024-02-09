@@ -11,10 +11,12 @@ const Clientes = () => {
     heightL={35}
     color={"bg-gray-100"}
    />
-   <div className="relative w-screen grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-0 px-4">
+   <div className="relative w-[80%] grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-0 px-4">
     {Clients.map((client) => (
      <div className="flex items-center justify-center">
-      <div className="text-black bg-red-400">{client.name}</div>
+      <div className="text-black w-28">
+       <img src={client.logo} />
+      </div>
      </div>
     ))}
    </div>

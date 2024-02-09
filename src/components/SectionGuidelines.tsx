@@ -39,7 +39,7 @@ const SectionGuidelines = ({
     <div id="Section_container" className={cn_2}>
      <div className="border-gray-200 border-solid lg:border-l-[1.5px] border-l-[1.5px]"></div>
      <div className="border-gray-200 border-none lg:border-dashed lg:border-x-[1.5px]"></div>
-     <div className="border-gray-200 border-none lg:border-dashed lg:border-r-[1.5px] lg:border-l-white  md:border-dashed md:border-l-[1.5px]"></div>
+     <div className="border-gray-200 border-none lg:border-dashed lg:border-r-[1.5px] lg:border-l-gray-50  md:border-dashed md:border-l-[1.5px]"></div>
      <div className="border-gray-200 border-none lg:border-none md:border-dashed md:border-r-[1.5px]"></div>
      <div className="border-gray-200 border-dashed lg:border-x-[1.5px]"></div>
      <div className="border-gray-200 border-solid lg:border-r-2 border-r-[1.5px]"></div>

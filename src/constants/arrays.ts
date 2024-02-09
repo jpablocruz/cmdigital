@@ -2,6 +2,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { Client, ContactLink, Navlink } from "../interfaces/links";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
+import telcelLogo from "../images/telcel.png";
 
 export const NavegationLinks: Navlink[] = [
  { name: "Renta de multifuncionales", link: "/renta-multifuncionales" },
@@ -12,35 +13,35 @@ export const NavegationLinks: Navlink[] = [
 export const Clients: Client[] = [
  {
   name: "telcel",
-  logo: "",
+  logo: telcelLogo,
  },
  {
   name: "CFE",
-  logo: "",
+  logo: telcelLogo,
  },
  {
   name: "casas geo",
-  logo: "",
+  logo: telcelLogo,
  },
  {
   name: "Gobierno de NL",
-  logo: "",
+  logo: telcelLogo,
  },
  {
   name: "UANL",
-  logo: "",
+  logo: telcelLogo,
  },
  {
   name: "CLiente 2",
-  logo: "",
+  logo: telcelLogo,
  },
  {
   name: "Cliente 3",
-  logo: "",
+  logo: telcelLogo,
  },
  {
   name: "Cliente 4",
-  logo: "",
+  logo: telcelLogo,
  },
 ];
 
