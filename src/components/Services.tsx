@@ -1,6 +1,8 @@
 import React from "react";
 import SectionGuidelines from "./SectionGuidelines";
 import NavButton from "./common/NavButton";
+import ipad from "../images/ipadDW-removebg.png";
+import printer from "../images/pngegg (2).png";
 
 const Services = () => {
  return (
@@ -29,7 +31,9 @@ const Services = () => {
        <NavButton link="#renta" />
       </div>
      </div>
-     <div className="lg:w-1/2">Aqui va lo otro</div>
+     <div className="lg:w-1/2">
+      <img src={printer} />
+     </div>
     </div>
     <div className="relative flex flex-col lg:flex-row h-[50%] items-center">
      <div className="lg:w-1/2 font-ibmplex">
@@ -48,7 +52,9 @@ const Services = () => {
        <NavButton link="#gestion" />
       </div>
      </div>
-     <div className="lg:w-1/2">Aqui va lo otro</div>
+     <div className="lg:w-1/2">
+      <img src={ipad} />
+     </div>
     </div>
    </div>
   </div>
