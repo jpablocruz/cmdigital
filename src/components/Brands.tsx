@@ -10,7 +10,7 @@ const Brands = () => {
     height={200}
     heightM={190}
     heightL={150}
-    color="bg-gray-50"
+    color="bg-gray-100"
    />
    <div className="relative w-[100%] flex flex-col px-4 justify-center py-10">
     <div className="text-center font-semibold font-ibmplex text-2xl pb-6">

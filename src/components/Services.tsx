@@ -1,5 +1,6 @@
 import React from "react";
 import SectionGuidelines from "./SectionGuidelines";
+import NavButton from "./common/NavButton";
 
 const Services = () => {
  return (
@@ -10,9 +11,45 @@ const Services = () => {
     heightL={150}
     color="bg-gray-50"
    />
-   <div className="relative w-[100%] flex flex-col md:flex-row px-4">
-    <div className="w-1/2 bg-red-600">Aqui va algo</div>
-    <div className="w-1/2 bg-blue-800">Aqui va lo otro</div>
+   <div className="relative w-[100%] flex flex-col px-4 gap-2 h-[100%]">
+    <div className="relative flex flex-col lg:flex-row h-[50%] items-center">
+     <div className="lg:w-1/2 font-ibmplex">
+      <h1 className="font-bold text-lg text-red-500 pb-7">
+       Renta de multifuncionales
+      </h1>
+      <h1 className="font-bold text-4xl mr-6">
+       Soluciones de impresión <br /> a tu medida
+      </h1>
+      <p className="text-xl/9 pt-4 mr-20">
+       Explora las últimas tecnologías para optimizar los tiempos, la calidad y
+       los costos en tus empresas o actividades, incluyendo la digitalización,
+       la reproducción y la impresión.
+      </p>
+      <div className="pt-8">
+       <NavButton link="#renta" />
+      </div>
+     </div>
+     <div className="lg:w-1/2">Aqui va lo otro</div>
+    </div>
+    <div className="relative flex flex-col lg:flex-row h-[50%] items-center">
+     <div className="lg:w-1/2 font-ibmplex">
+      <h1 className="font-bold text-lg text-red-500 pb-7">
+       Gestión Documental
+      </h1>
+      <h1 className="font-bold text-4xl mr-6">
+       Almacena, organiza <br /> y encuentra tus documentos
+      </h1>
+      <p className="text-xl/9 pt-4 mr-20">
+       Eleva tu productividad. Guarda tus archivos históricos, organízalos y
+       autoriza desde cualquier lugar. La eficiencia y el orden iran de la mano
+       en tu oficina.
+      </p>
+      <div className="pt-8">
+       <NavButton link="#gestion" />
+      </div>
+     </div>
+     <div className="lg:w-1/2">Aqui va lo otro</div>
+    </div>
    </div>
   </div>
  );
