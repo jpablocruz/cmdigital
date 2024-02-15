@@ -67,7 +67,7 @@ const Navbar = () => {
        </ul>
       </div>
       <div className="navbar-end hidden md:flex font-ibmplex">
-       <NavButton link="/soporte" />
+       <NavButton type="button">Soporte</NavButton>
       </div>
      </div>
     </div>

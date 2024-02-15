@@ -28,7 +28,7 @@ const Services = () => {
        la reproducción y la impresión.
       </p>
       <div className="pt-8">
-       <NavButton link="#renta" />
+       <NavButton>Equipos</NavButton>
       </div>
      </div>
      <div className="lg:w-1/2">
@@ -49,7 +49,7 @@ const Services = () => {
        en tu oficina.
       </p>
       <div className="pt-8">
-       <NavButton link="#gestion" />
+       <NavButton>Gestión Documental</NavButton>
       </div>
      </div>
      <div className="lg:w-1/2">

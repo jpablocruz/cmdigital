@@ -48,8 +48,8 @@ const Footer = () => {
      </a>
     </nav>
    </footer>
-   <footer className="relative footer bottom-0 px-32 h-[25vh] md:h-[11vh] lg:h-[10vh] border-t text-black font-ibmplex border-gray-300">
-    <SectionGuidelines height={25} heightM={11} heightL={10} color="bg-white" />
+   <footer className="relative footer bottom-0 px-32 h-[27vh] md:h-[11vh] lg:h-[10vh] border-t text-black font-ibmplex border-gray-300">
+    <SectionGuidelines height={27} heightM={11} heightL={10} color="bg-white" />
     <div className="flex flex-col md:flex-row lg:flex-row relative gap-8 md:gap-6 lg:gap-24 py-4 items-center justify-between w-[100%] px-4">
      <aside className="relative items-center grid-flow-col">
       <p>© CM Digital 2024</p>
