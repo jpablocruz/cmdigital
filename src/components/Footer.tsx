@@ -3,60 +3,68 @@ import { MdPrivacyTip } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { ContactLinks } from "../constants/arrays";
 import { NavegationLinks } from "../constants/arrays";
+import SectionGuidelines from "./SectionGuidelines";
 
 const Footer = () => {
  return (
   <>
-   <footer className="footer bottom-14 md:px-32 py-7 bg-white text-black font-ibmplex">
-    <nav>
-     <h6 className="footer-title font-bold text-gray-500 pb-3">Navegación</h6>
+   <footer className=" gap-24 relative h-[30vh] footer md:px-32 text-black font-ibmplex">
+    <SectionGuidelines height={60} heightM={40} heightL={30} color="bg-white" />
+    <nav className="relative py-8 lg:px-4">
+     <h6 className="relative footer-title font-bold text-gray-500 pb-3">
+      Navegación
+     </h6>
      {NavegationLinks.map((link) => (
       <NavLink
        key={link.name}
        to={link.link}
-       className="hover:text-gray-500 py-1"
+       className="relative hover:text-gray-500 py-1"
       >
        {link.name}
       </NavLink>
      ))}
     </nav>
-    <nav>
-     <h6 className="footer-title font-bold text-gray-500 pb-3">Contactos</h6>
+    <nav className="py-8 lg:px-4">
+     <h6 className="relative footer-title font-bold text-gray-500 pb-3">
+      Contactos
+     </h6>
      {ContactLinks.map((link) => (
       <a
        key={link.name}
-       className="group flex gap-4 items-center py-1"
+       className="relative group flex gap-4 items-center py-1"
        href={link.link}
       >
-       <link.icon className="group-hover:text-gray-500" />
+       <link.icon className="relative group-hover:text-gray-500" />
        <span className="group-hover:text-gray-500">{link.info}</span>
       </a>
      ))}
     </nav>
-    <nav>
-     <h6 className="footer-title font-bold text-gray-500 pb-3">
+    <nav className="py-8 lg:px-4">
+     <h6 className="relative footer-title font-bold text-gray-500 pb-3">
       Cotiza o Contáctanos
      </h6>
-     <a className="link link-hover">
+     <a className="relative link link-hover">
       Aqui pondremos una caja para mandar un correo
      </a>
     </nav>
    </footer>
-   <footer className="footer bottom-0 px-32 py-4 border-t bg-white text-black font-ibmplex border-gray-300">
-    <aside className="items-center grid-flow-col">
+   <footer className="relative footer bottom-0 px-32 h-[5vh] py-4 border-t text-black font-ibmplex border-gray-300">
+    <SectionGuidelines height={5} heightM={5} heightL={5} color="bg-white" />
+
+    <aside className="relative items-center grid-flow-col">
      <p>© CM Digital 2024</p>
     </aside>
-    <aside className="items-center grid-flow-col flex gap-3">
+    <aside className="relative items-center grid-flow-col flex gap-3">
      <MdPrivacyTip className="text-blue-600" />
      <p>Aviso de privacidad</p>
     </aside>
-    <aside className="items-center grid-flow-col">
+    <aside className="relative items-center grid-flow-col">
      <p>
       Desarrollado por <u>Pablo Cruz.</u>
      </p>
     </aside>
-    <nav className="md:place-self-center md:justify-self-end">
-     <div className="grid grid-flow-col gap-4">
+    <nav className="relative md:place-self-center md:justify-self-end">
+     <div className="relative grid grid-flow-col gap-4">
       <a>
        <svg
         xmlns="http://www.w3.org/2000/svg"

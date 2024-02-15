@@ -18,7 +18,7 @@ const Home = () => {
     />
     <div className="relative flex flex-col md:flex-row px-4">
      <div className="md:w-3/5 md:mt-8 lg:mt-16 pb-5">
-      <div className="hero-content pt-8">
+      <div className="hero-content lg:pt-8">
        <div className="text-black text-center md:text-start">
         <h1 className="text-4xl md:text-5xl font-bold pb-3">
          Acelera tu oficina

@@ -5,11 +5,11 @@ import sharpLogo from "../images/sharp.png";
 
 const Brands = () => {
  return (
-  <div className="flex relative h-40vh z-10 text-black font-mavenPro justify-center border-t-gray-200 border-t-[1px] lg:px-32 md:px-4 overflow-hidden">
+  <div className="flex relative h-[40vh] z-10 text-black font-mavenPro justify-center border-t-gray-200 border-t-[1px] lg:px-32 md:px-4 overflow-hidden">
    <SectionGuidelines
     height={200}
     heightM={190}
-    heightL={150}
+    heightL={30}
     color="bg-gray-100"
    />
    <div className="relative w-[100%] flex flex-col px-4 justify-center py-10">
