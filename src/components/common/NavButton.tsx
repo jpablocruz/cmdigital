@@ -8,6 +8,7 @@ interface NavButtonProps
  extends ButtonHTMLAttributes<HTMLButtonElement>,
   VariantProps<typeof NavButtonVariants> {
  children: ReactNode;
+ link: string;
 }
 
 const NavButtonVariants = cva(
@@ -16,7 +17,7 @@ const NavButtonVariants = cva(
   variants: {
    variant: {
     primary:
-     "bg-purple text-white font-normal hover:bg-purple_dark active:bg-purple_darker disabled:opacity-40",
+     "btn bg-red-500 text-white h-8 min-h-0 px-3 hover:bg-black ease-in-out duration-200",
     secondary:
      "bg-green text-white font-normal hover:bg-green_dark active:bg-green_darker",
     transparent:
@@ -35,26 +36,32 @@ const NavButtonVariants = cva(
  }
 );
 
-const NavButton = (
- { children, className, variant, size, ...props }: NavButtonProps,
- link: string
-) => {
+const NavButton = ({
+ children,
+ className,
+ variant,
+ size,
+ link,
+ ...props
+}: NavButtonProps) => {
  const [hovered, setHovered] = useState(false);
  const toggleHover = () => {
   setHovered(!hovered);
  };
 
  return (
-  <NavLink
-   to={link}
-   className="btn bg-red-500 text-white h-8 min-h-0 px-3 hover:bg-black ease-in-out duration-200"
-   onMouseEnter={() => toggleHover()}
-   onMouseLeave={() => toggleHover()}
-  >
-   <div className="flex gap-3 font-ibmplex font-semibold">
-    {children}
-    {hovered ? <FaArrowRight /> : <FaChevronRight />}
-   </div>
+  <NavLink to={link}>
+   <button
+    className={cn(NavButtonVariants({ variant, size, className }))}
+    {...props}
+    onMouseEnter={() => toggleHover()}
+    onMouseLeave={() => toggleHover()}
+   >
+    <div className="flex gap-3 font-ibmplex font-semibold">
+     {children}
+     {hovered ? <FaArrowRight /> : <FaChevronRight />}
+    </div>
+   </button>
   </NavLink>
  );
 };

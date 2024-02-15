@@ -31,7 +31,9 @@ const Home = () => {
          impresión y copiadoras - Desde impresoras multifunción hasta copiadoras
          de alta calidad.
         </p>
-        <NavButton type="button">Contactanos</NavButton>
+        <NavButton link={"#"} type="button">
+         Contactanos
+        </NavButton>
         <button className="btn font-bold text-red-500 font-ibmplex text-base">
          Contáctanos
         </button>
