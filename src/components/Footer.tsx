@@ -9,7 +9,12 @@ const Footer = () => {
  return (
   <>
    <footer className="footer relative h-[70vh] lg:gap-24 md:gap-12 lg:h-[30vh] md:h-[30vh] lg:px-32 md:px-16 text-black font-ibmplex">
-    <SectionGuidelines height={70} heightM={30} heightL={30} color="bg-white" />
+    <SectionGuidelines
+     height={70}
+     heightM={30}
+     heightL={30}
+     color="bg-gray-50"
+    />
     <nav className="relative py-8 lg:px-4">
      <h6 className="relative footer-title font-bold text-gray-500 pb-3">
       Navegación
@@ -49,8 +54,13 @@ const Footer = () => {
     </nav>
    </footer>
    <footer className="relative footer bottom-0 px-32 h-[27vh] md:h-[11vh] lg:h-[10vh] border-t text-black font-ibmplex border-gray-300">
-    <SectionGuidelines height={27} heightM={11} heightL={10} color="bg-white" />
-    <div className="flex flex-col md:flex-row lg:flex-row relative gap-8 md:gap-6 lg:gap-24 py-4 items-center justify-between w-[100%] px-4">
+    <SectionGuidelines
+     height={27}
+     heightM={11}
+     heightL={10}
+     color="bg-gray-50"
+    />
+    <div className="flex flex-col md:flex-row lg:flex-row relative gap-8 md:gap-6 lg:gap-24 pt-4 items-center justify-between w-[100%] px-4">
      <aside className="relative items-center grid-flow-col">
       <p>© CM Digital 2024</p>
      </aside>

@@ -1,6 +1,13 @@
 import { FaLocationDot } from "react-icons/fa6";
 import { Client, ContactLink, Navlink } from "../interfaces/links";
-import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import {
+ FaEnvelope,
+ FaPhoneAlt,
+ FaMoneyBillAlt,
+ FaPiggyBank,
+ FaToolbox,
+} from "react-icons/fa";
+import { FaArrowRotateLeft } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import telcelLogo from "../images/telcel.png";
 import casasLogo from "../images/casasgeo.png";
@@ -10,6 +17,25 @@ export const NavegationLinks: Navlink[] = [
  { name: "Renta de multifuncionales", link: "/renta-multifuncionales" },
  { name: "Gestión documental", link: "/gestion-documental" },
  { name: "Nosotros", link: "/nosotros" },
+];
+
+export const RentMultiList: any[] = [
+ {
+  sentence: "Cero inversion en compra de equipo",
+  icon: FaPiggyBank,
+ },
+ {
+  sentence: "Costos accesibles",
+  icon: FaMoneyBillAlt,
+ },
+ {
+  sentence: "Servicio adaptado a tus cantidades",
+  icon: FaArrowRotateLeft,
+ },
+ {
+  sentence: "Consumibles y refacciones",
+  icon: FaToolbox,
+ },
 ];
 
 export const Clients: Client[] = [
