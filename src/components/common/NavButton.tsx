@@ -57,10 +57,8 @@ const NavButton = ({
     onMouseEnter={() => toggleHover()}
     onMouseLeave={() => toggleHover()}
    >
-    <div className="flex gap-3 font-ibmplex font-semibold">
-     {children}
-     {hovered ? <FaArrowRight /> : <FaChevronRight />}
-    </div>
+    <div className="font-ibmplex font-semibold pr-3">{children}</div>
+    {hovered ? <FaArrowRight /> : <FaChevronRight />}
    </button>
   </NavLink>
  );
