@@ -3,9 +3,9 @@ import SectionGuidelines from "./SectionGuidelines";
 
 const PrinterList = () => {
  return (
-  <div className="flex relative h-[120] md:h-[90vh] lg:h-[90vh] z-10 justify-center overflow-hidden">
+  <div className="flex relative h-[130vh] md:h-[90vh] lg:h-[90vh] z-10 justify-center overflow-hidden">
    <SectionGuidelines
-    height={120}
+    height={130}
     heightM={90}
     heightL={90}
     color="bg-gray-50"
@@ -23,7 +23,7 @@ const PrinterList = () => {
       <p></p>
      </div>
     </div>
-    <div className="flex flex-col md:w-[63%] h-full justify-center md:mt-12 pr-32">
+    <div className="flex flex-col w-[100%] md:w-[63%] h-full justify-center md:mt-12 pr-32">
      <div className="flex gap-4 justify-center text-black pb-4">
       <button className=" rounded-full bg-red-500 py-2 px-4 text-white font-bold font-ibmplex">
        Color
