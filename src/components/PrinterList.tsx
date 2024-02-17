@@ -20,22 +20,31 @@ const PrinterList = () => {
        Contamos con la mejor tecnología para tu oficina. <br /> Nuestras
        soluciones son personalizadas según tus necesidades
       </p>
+      <p></p>
      </div>
     </div>
-    <div className="flex md:w-[63%] h-full justify-center items-center pt-6 md:pt-0 ">
-     <div className="carousel w-full h-[75%] items-center">
-      <div className="carousel h-full rounded-box">
+    <div className="flex flex-col md:w-[63%] h-full justify-center md:mt-12 pr-32">
+     <div className="flex gap-4 justify-center text-black pb-4">
+      <button className=" rounded-full bg-red-500 py-2 px-4 text-white font-bold font-ibmplex">
+       Color
+      </button>
+      <button className=" rounded-full  py-2 px-4 text-black font-bold font-ibmplex">
+       BN
+      </button>
+     </div>
+     <div className="carousel w-full h-[75%]  justify-center">
+      <div className="carousel h-[90%] w-[90%] rounded-box shadow-gray-300 shadow-xl bg-white">
        <div className="carousel-item">
-        <div className="rounded-box bg-gray-300 h-[100%] w-[50vh] mx-4" />
+        <div className="bg-gray-400 h-[100%] w-[50vh]" />
        </div>
        <div className="carousel-item">
-        <div className="rounded-box bg-gray-300 h-[100%] w-[50vh] mx-4" />
+        <div className="bg-red-200 h-[100%] w-[50vh]" />
        </div>
        <div className="carousel-item">
-        <div className="rounded-box bg-gray-300 h-[100%] w-[50vh] mx-4" />
+        <div className="bg-blue-100 h-[100%] w-[50vh]" />
        </div>
        <div className="carousel-item">
-        <div className="rounded-box bg-gray-300 h-[100%] w-[50vh] mx-4" />
+        <div className="h-[100%] w-[50vh]" />
        </div>
       </div>
       {/* {RentMultiList.map((item) => (
