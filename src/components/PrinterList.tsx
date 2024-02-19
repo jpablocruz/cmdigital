@@ -1,5 +1,6 @@
 import React from "react";
 import SectionGuidelines from "./SectionGuidelines";
+import PrinterCard from "./PrinterCard";
 
 const PrinterList = () => {
  return (
@@ -10,7 +11,7 @@ const PrinterList = () => {
     heightL={90}
     color="bg-gray-50"
    />{" "}
-   <div className="w-screen relative flex flex-col md:flex-row pl-4 lg:pl-32">
+   <div className="w-screen relative flex flex-col md:flex-row px-4 lg:px-32">
     <div className="flex md:w-[37%] ml-4 mt-32">
      <div className="flex flex-col font-ibmplex">
       <h1 className="font-bold text-2xl text-black pb-6">
@@ -23,7 +24,7 @@ const PrinterList = () => {
       <p></p>
      </div>
     </div>
-    <div className="flex flex-col w-[100%] md:w-[63%] h-full justify-center md:mt-12 pr-32">
+    <div className="flex flex-col w-[100%] md:w-[63%] h-full justify-center md:mt-12 ">
      <div className="flex gap-4 justify-center text-black pb-4">
       <button className=" rounded-full bg-red-500 py-2 px-4 text-white font-bold font-ibmplex">
        Color
@@ -32,13 +33,17 @@ const PrinterList = () => {
        BN
       </button>
      </div>
-     <div className="carousel w-full h-[75%]  justify-center">
-      <div className="carousel h-[90%] w-[90%] rounded-box shadow-gray-300 shadow-xl bg-white">
+     <div className="w-full h-[75%]  justify-end pl-8 pr-4">
+      <div className="carousel h-[90%] w-[100%] rounded-box shadow-gray-300 shadow-xl bg-white">
        <div className="carousel-item">
-        <div className="bg-gray-400 h-[100%] w-[50vh]" />
+        <div className=" h-[100%] w-[50vh]">
+         <PrinterCard />
+        </div>
        </div>
        <div className="carousel-item">
-        <div className="bg-red-200 h-[100%] w-[50vh]" />
+        <div className="h-[100%] w-[50vh]">
+         <PrinterCard />
+        </div>
        </div>
        <div className="carousel-item">
         <div className="bg-blue-100 h-[100%] w-[50vh]" />
