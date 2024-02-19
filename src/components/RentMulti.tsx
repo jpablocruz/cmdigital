@@ -4,6 +4,7 @@ import { RentMultiList } from "../constants/arrays";
 import { FaMoneyBillAlt } from "react-icons/fa";
 import RentHero from "./RentHero";
 import PrinterList from "./PrinterList";
+import Steps from "./Steps";
 
 const RentMulti = () => {
  return (
@@ -43,6 +44,7 @@ const RentMulti = () => {
     </div>
    </div>
    <PrinterList />
+   <Steps />
   </>
  );
 };
