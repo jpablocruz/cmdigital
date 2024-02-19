@@ -33,23 +33,17 @@ const PrinterList = () => {
        BN
       </button>
      </div>
-     <div className="w-full h-[75%]  justify-end pl-8 pr-4">
-      <div className="carousel h-[90%] w-[100%] rounded-box shadow-gray-300 shadow-xl bg-white">
+     <div className="w-full h-[75%]  justify-end pl-8 pr-4 ">
+      <div className="carousel h-[90%] w-[100%] items-center rounded-box shadow-gray-300 shadow-xl bg-white">
        <div className="carousel-item">
-        <div className=" h-[100%] w-[50vh]">
+        <div className=" h-[100%] w-[45vh]">
          <PrinterCard />
         </div>
        </div>
        <div className="carousel-item">
-        <div className="h-[100%] w-[50vh]">
+        <div className="h-[100%] w-[45vh]">
          <PrinterCard />
         </div>
-       </div>
-       <div className="carousel-item">
-        <div className="bg-blue-100 h-[100%] w-[50vh]" />
-       </div>
-       <div className="carousel-item">
-        <div className="h-[100%] w-[50vh]" />
        </div>
       </div>
       {/* {RentMultiList.map((item) => (
